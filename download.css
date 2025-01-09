@@ -1,0 +1,426 @@
+*{
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: none;
+	font-family: Montserrat;
+}
+
+.background{
+	background: linear-gradient(45deg, #000033, #000099);
+	margin-bottom: 40px;
+	color: #fff;
+}
+
+.logo img{
+	width: 70px;
+	height: 70px;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+li a:hover{
+	text-decoration: underline;
+}
+
+header{
+	position: relative;
+	padding: 0 2rem;
+}
+
+.navbar{
+	width: 100%;
+	height: 60px; 
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar .logo a{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.navbar .link{
+	display: flex;
+	gap: 2rem;
+}
+
+.navbar .toggle-btn{
+	color: #fff;
+	font-size: 1.5rem;
+	cursor: pointer;
+	display: none;
+}
+
+.action-btn{
+	background: #fff;
+	color: blue;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 0.8rem;
+	cursor: pointer;
+}
+
+.action-btn:hover{
+	background: none;
+	border: 2px solid #fff;
+	color: #fff;
+}
+
+.action-btn:active{
+	scale: 0.95; 
+}
+
+/*dropdown menu*/
+.dropdown-menu{
+	display: none;
+	position: absolute;
+	right: 2rem;
+	top: 60px;
+	width: 300px;
+	height: 0;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	overflow: hidden;
+	border-radius: 10px;
+	transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open{
+	height: 240px;
+}
+
+.dropdown-menu li{
+	 padding: 0.7rem;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+
+.dropdown-menu .action-btn{
+	width: 90%;
+	display: flex;
+	justify-content: center;
+}
+
+
+/*Responsive design*/
+
+.social i{
+	margin-right: 20px;
+}
+.banner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	padding: 50px 0;
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+
+.banner .topic{
+	width: 550px;
+	text-align: left;
+}
+.banner .topic p{
+	margin: 25px 0;
+	color: whitesmoke;
+	font-weight: bold;
+	font-size: 5em;
+	font-family: comic sans ms;
+}
+
+
+.banner img{
+	height: 300px;
+	width: 500px;
+	box-shadow: ;
+	border-radius: 15px;
+}
+
+.banner button{
+	background: pink;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	transition: 0.3s ease;
+}
+
+.banner button:hover{
+	color: #fff;
+	border: 2px solid orange;
+	background: none;
+}
+
+.banner h2{
+	font-size: 2em;
+
+}
+
+.search{
+	padding: 20px;
+}
+
+.search .container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	padding: 30px;
+	
+}
+
+.search .container form{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	border: 1px solid grey;
+	height: 40px;
+	width: 500px;
+	border-radius: 50px;
+	background: none;
+}
+
+.search .container  input{
+	border: none;
+	outline: none;
+	background: none;
+}
+
+.search .container input[type="search"]{
+	text-align: center;
+	background: none;
+	font-family: montserrat;
+	color: black;
+	font-size: 18px;
+}
+
+/*.search .container  button {
+	width: 100px;
+	height: 35px;
+	padding: 10px;
+	border-radius: 5px;
+	background: linear-gradient(45deg, orange, gold);
+	text-align: center;
+	color: #fff;
+	border: none;
+	transition: 0.4s ease-in-out;
+}
+*/
+.productDisplay{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 40px 20px 40px 20px;
+	align-items: center;
+	justify-content: space-around;
+	background: ghostwhite;
+}
+
+
+.songs{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	height: 250px;
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	border-radius: 5px;
+	background: white;
+}
+
+.songs img{
+	width: 150px;
+	height: 100px;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.songs h3{
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.songs button{
+	background: ghostwhite;
+	border-radius: 10px;
+	padding: 10px;
+	border: none;
+	margin-top: 20px;
+	color: blue;
+	font-family: montserrat;
+	transition: 0.4s ease-in-out;
+}
+
+.songs button:hover, .search .container  button:hover{
+	background:  #F5F5DC;
+	color: blue;
+	transform: scale(1:1);
+}
+
+#customersForm{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(45deg, grey, #6A5ACD);	
+	padding: 50px;
+}
+
+#customersForm .formImg, .form{
+	border-radius: 10px;
+	text-align: center;
+}
+
+#customersForm .formImg img{
+	width: 400px;
+	height: 550px;
+	background: whitesmoke;
+}
+
+#customersForm .form form{
+	background: ghostwhite;
+	width: 400px;
+	height: 500px;
+	padding-top: 50px;
+
+}
+
+#customersForm .form form h4{
+	color: purple;
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px; 
+	margin-bottom: 50px;
+}
+
+#customersForm label{
+	color: purple;
+	font-weight: bold;
+	text-align: left;
+	font-size: 1.5em;
+}
+
+#customersForm button{
+	color: #fff;
+	font-weight: bold;
+	background: linear-gradient(45deg, purple, grey);
+	/*background: purple;*/
+	width: 70%;
+	margin-top: 50px;
+	transition: 0.3s ease-in-out;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+}
+
+#customersForm button:hover{
+	background: #fff;
+	color: purple;
+	font-weight: bold;
+	border: 2px solid purple;
+}
+
+#customersForm input[type = "email"], 
+#customersForm input[type = "text"],
+#customersForm input[type = "tel"]
+{
+	text-align: center;
+}
+
+#customersForm input{
+	width: 70%;
+	height: 35px;
+	border-radius: 10px;
+	background: whitesmoke;
+	border: 2px solid purple;
+	margin: 5px;
+}
+
+
+.footer{
+	background: #001;
+	color: #fff;
+	padding: 40px;
+}
+
+.footer .container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footer ul li {
+	list-style: none;
+}
+
+.footer ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.footer form{
+	text-align: center;
+	width: 400px;
+}
+
+.footer form h4{
+	color: orange;
+	font-size: 1.5em;
+}
+
+.footer form input{
+	border: 1px solid whitesmoke;
+	height: 35px;
+	width: 350px;
+	border-radius: 3px;
+	background: none;
+}
+
+.footer form input[type="email"]{
+	text-align: center;
+	background: none;
+	font-family: arial;
+}
+
+.footer form button {
+	background: ghostwhite;
+	border-radius: 10px;
+	padding: 10px;
+	border: none;
+	margin-top: 20px;
+	color: blue;
+	font-family: montserrat;
+	transition: 0.4s ease-in-out;
+}
+
